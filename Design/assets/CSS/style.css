@@ -159,7 +159,9 @@ header > div:last-child{
   margin-right: 10px;
 }
 
-
+.about-us-profile ul li i{
+  font-size: 12px;
+}
 
 .new-profile{
   width: 100%;
@@ -207,10 +209,15 @@ header > div:last-child{
 
 .profile-details{
   position: absolute;
-  top: 25%;
+  top: 18%;
   left: 2%;
   width: 20%;
 }
+
+.profile-details p{
+  margin: 60px 0px;
+}
+
 .profile-details h1 ,.heading-section h1{
   font-family: 'Poppins', sans-serif;
   font-size: 57px;
@@ -265,7 +272,7 @@ header > div:last-child{
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   width: 66%;
-  padding: 15px 0px;
+  padding: 20px 0px;
 }
 
 .fa-play{
@@ -279,7 +286,7 @@ header > div:last-child{
 }
 
 .view-profile-btn span i{
-  padding: 15px;
+  padding: 20px;
 }
 
 .enquire-btn{
@@ -300,6 +307,10 @@ header > div:last-child{
   position: absolute;
   top: 100%;
   left: 0;
+}
+
+.profile ul i{
+  font-size: 12px;
 }
 
 .about-profile-wrapper > ul{
@@ -325,6 +336,7 @@ header > div:last-child{
 
 .about-profile-wrapper li a i{
   margin: 0;
+  font-size: 14px;
 }
 
 .slider{
@@ -332,6 +344,20 @@ header > div:last-child{
   float: right;
   padding-top: 140px;
   margin-top: 150px;
+}
+
+.slider .dash{
+  content: "";
+  width: 23px;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+  margin-left: 5px;
+  display: none;
+}
+
+.slider span:hover .dash{
+  display: inline-block;
 }
 
 .vertical-slider{
@@ -344,16 +370,18 @@ header > div:last-child{
   display: block;
   font-size: 11px;
   color: gray;
+  transform: rotate(-90deg);
 }
 
-.vertical-slider::after{
+.vertical-slider::before{
   content: "";
   display: block;
   width: 21px;
   height: 2px;
   background-color: black;
-  margin: -7px 36px;
   vertical-align: middle;
+  transform: rotate(90deg);
+  margin: 0px 0px 24px 0px;
 }
 
 .slider span{
@@ -362,15 +390,6 @@ header > div:last-child{
   margin: 15px 0px;
   color: gray;
   text-align: center;
-}
-
-.slider span:hover::after{
-  content: "";
-  width: 23px;
-  height: 2px;
-  background-color: black;
-  display: inline-block;
-  margin: 3px 21px;
 }
 
 .slider span:hover{
@@ -441,13 +460,15 @@ header > div:last-child{
 .profile-container ul li ,.about-profile ul li ,.more-details ul li ,.list-wrapper ul li{
   margin: 0px 15px;
   border-bottom: 1px solid white;
+  padding: 10px 0px;
 }
 
 .profile-container li a ,.about-profile li a ,.more-details li a ,.list-wrapper li a{
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Poppins', sans-serif;
   color: gray;
+  letter-spacing: 1px;
 }
 
 .profile-container li:hover a , .about-profile li:hover a ,.more-details li:hover a ,.list-wrapper li:hover a{
@@ -690,19 +711,21 @@ header > div:last-child{
 
 .explore-btn{
   background-color: #B1D0D2;
-  border: none;
   border-radius: 25px;
   line-height: 1;
-  padding: 20px;
+  padding: 18px 49px;
   color: white;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 10px;
-  margin: 0px auto;
   display: block;
+  margin: 0px auto;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .explore-btn:hover{
-  color: black;
+  background-color: lightgray;
 }
 
 .explore-more .explore a{
@@ -752,7 +775,7 @@ h2{
 }
 
 .flex-items div:first-child{
-  width: 100px;
+  width: 140px;
   height: 100px;
   position: relative;
 }
@@ -876,6 +899,7 @@ div:first-child .wrapper{
   background-color: white;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .item3 div:first-child ,.item5 > div:first-child{
@@ -1179,6 +1203,15 @@ footer .signup{
   flex-direction: column;
 }
 
+footer input{
+  border: none;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 10px;
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
 .signup{
   border-bottom: 1px solid lightgray;
   box-shadow: 0px 1px 14px -9px lightgray;
@@ -1244,6 +1277,11 @@ footer ul{
   margin: 0;
 }
 
+footer .external-links a i{
+  font-size: 13px;
+  margin: 0px 6px;
+}
+
 footer ul li{
   float: left;
   margin-right: 10px;
@@ -1253,7 +1291,7 @@ footer li a{
   text-decoration: none;
 }
 
-.color-white{
+ header .color-white{
   color: white;
 }
 
@@ -1336,6 +1374,10 @@ footer li a{
   .image-container{
     width: 80%;
     float: right;
+  }
+
+  .dropdown{
+    width: 19%;
   }
 
   .fa-user{
@@ -1450,6 +1492,7 @@ footer li a{
   .grid-items{
     padding: 0;
     margin: 10px;
+    text-align: left;
   }
 
   .item1{
@@ -1665,8 +1708,8 @@ footer li a{
 
   .about-gray-stripe{
     width: 100%;
-    top: -120px;
-    left: -81%;
+    top: -106px;
+    left: -78%;
     display: block;
   }
 
